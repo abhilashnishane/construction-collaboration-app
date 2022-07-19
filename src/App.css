@@ -1,0 +1,43 @@
+.app-cont {
+  padding: 20px;
+}
+.btn-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.main-img {
+  /* height: 500px; */
+  width: 50vw;
+  /* cursor: url('pin.png'); */
+  /* cursor: url(pin.png), default; */
+}
+.rhs-section-cont {
+  padding-left: 10px;
+}
+.img-n-comment-cont {
+  display: flex;
+}
+.comment-input-cont {
+  border: 1px solid #666;
+  padding: 10px;
+}
+.comment-input {
+  width: 300px;
+  height: 80px;
+}
+.submit-comment {
+  margin-right: 10px;
+}
+/* #file {
+  display: none;
+} */
+.identified-emails-list {
+  margin-top: 10px;
+}
+
+.canvas-style {
+  cursor:crosshair;
+  /* background:url(http://www.mundoanimalia.com/images/articles/66/58/06/7f6ffaa6bb0b408017b62254211691b5/gallina.jpg); */
+}
