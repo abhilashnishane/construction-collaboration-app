@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/construction-collaboration-app/static/css/main.ca60b3d6.css",
-    "main.js": "/construction-collaboration-app/static/js/main.638d4061.js",
+    "main.css": "/construction-collaboration-app/static/css/main.a02e309a.css",
+    "main.js": "/construction-collaboration-app/static/js/main.92af1a06.js",
     "static/js/787.d0387f79.chunk.js": "/construction-collaboration-app/static/js/787.d0387f79.chunk.js",
     "index.html": "/construction-collaboration-app/index.html",
-    "main.ca60b3d6.css.map": "/construction-collaboration-app/static/css/main.ca60b3d6.css.map",
-    "main.638d4061.js.map": "/construction-collaboration-app/static/js/main.638d4061.js.map",
+    "main.a02e309a.css.map": "/construction-collaboration-app/static/css/main.a02e309a.css.map",
+    "main.92af1a06.js.map": "/construction-collaboration-app/static/js/main.92af1a06.js.map",
     "787.d0387f79.chunk.js.map": "/construction-collaboration-app/static/js/787.d0387f79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca60b3d6.css",
-    "static/js/main.638d4061.js"
+    "static/css/main.a02e309a.css",
+    "static/js/main.92af1a06.js"
   ]
 }
