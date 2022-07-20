@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Canvas from './Canvas';
 import './App.css';
 
 function extractEmails ( text ){
@@ -13,28 +14,6 @@ function App() {
   const [commentText, setCommentText] = useState('')
   const [foundEmailIds, setFoundEmailIds] = useState('')
 
-  // var pointSize = 3;
-
-  // function getPosition(event){
-  //     var rect = canvas.getBoundingClientRect();
-  //     var x = event.clientX - rect.left;
-  //     var y = event.clientY - rect.top;
-          
-  //     drawCoordinates(x,y);
-  // }
-
-  // function drawCoordinates(x,y){	
-  //     var ctx = document.getElementById("canvas").getContext("2d");
-
-
-  //     ctx.fillStyle = "#ff2626"; // Red color
-
-  //     ctx.beginPath();
-  //     ctx.arc(x, y, pointSize, 0, Math.PI * 2, true);
-  //     ctx.fill();
-  // }
-
-  // create a preview as a side effect, whenever selected file is changed
   useEffect(() => {
       if (!selectedFile) {
           setPreview(undefined)
@@ -54,19 +33,17 @@ function App() {
           return
       }
 
-      // I've kept this example simple by using the first image instead of multiple
       setSelectedFile(e.target.files[0])
       setShowUploadScreen(false)
   }
 
   const handleCommentChange = (event) => {
-    // console.log(event.target.value);
     setCommentText(event.target.value);
   }
 
   const submitComment = () => {
-    console.log(commentText);
-    console.log(extractEmails(commentText)?.join(','));
+    // console.log(commentText);
+    // console.log(extractEmails(commentText)?.join(','));
     setFoundEmailIds(extractEmails(commentText)?.join(','));
     
   }
@@ -74,8 +51,6 @@ function App() {
   const cancelComment = () => {
     setCommentText('');
   }
-
-  
 
   return (
     <div className='app-cont'>
@@ -88,9 +63,10 @@ function App() {
         </div>
         :
         <div className='img-n-comment-cont'>
-          <div>
-            <div><img src={preview} className='main-img' /></div>
+          <div className='canvas-cont'>
+            {/* <div><img src={preview} className='main-img' /></div> */}
             {/* <canvas id="canvas" className='canvas-style main-img' style={{ backgroundImage: `url(${preview})` }}></canvas> */}
+            <Canvas backgroundImage={preview} />
           </div>
           <div className='rhs-section-cont'>
             <div className='comment-input-cont'>
